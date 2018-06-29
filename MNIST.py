@@ -5,6 +5,7 @@ from keras.datasets import mnist
 from keras.models import Sequential
 from keras.layers import Dense, Dropout
 from keras.optimizers import RMSprop
+import time 
 
 
 
@@ -30,6 +31,8 @@ y_train = keras.utils.to_categorical(y_train, 10)
 y_test = keras.utils.to_categorical(y_test, 10)
 #ont-hot coding 轉換
 
+start = time.time()
+
 model = Sequential()
 model.add(Dense(10, activation='relu', input_shape=(784,)))
 #model.add(Dense(10, activation='relu'))
@@ -51,6 +54,10 @@ history = model.fit(x_train, y_train,
                     epochs=10,
                     verbose=1,
                     validation_data=(x_test, y_test))
+
+end = time.time() - start
+print('time:',end)
+
 score = model.evaluate(x_test, y_test, verbose=0)
 print('test loss:', score[0])
 print('test accuracy:', score[1])
