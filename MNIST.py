@@ -2,6 +2,9 @@ from __future__ import print_function
 
 import keras
 from keras.datasets import mnist
+from keras.models import Sequential
+from keras.layers import Dense, Dropout
+from keras.optimizers import RMSprop
 
 
 
@@ -25,3 +28,17 @@ print(x_train.shape[0], x_test.shape[0])
 y_train = keras.utils.to_categorical(y_train, 10)
 y_test = keras.utils.to_categorical(y_test, 10)
 #ont-hot coding 轉換
+
+model = Sequential()
+model.add(Dense(100, activation='relu', input_shape=(784,)))
+model.add(Dense(100, activation='relu'))
+model.add(Dense(10, activation='softmax'))
+
+
+#model設計
+
+
+
+
+
+
