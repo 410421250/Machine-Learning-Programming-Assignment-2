@@ -25,3 +25,9 @@ Handwritten Character Recognition
 ![image](https://github.com/410421250/Machine-Learning-Programming-Assignment-2/blob/master/neurons.jpg)
 
 這個實驗中可以觀察到，增加神經元的數目確實是可以增加辨識的強度，但是在到達一個極限後，正確率上升的數目就會趨緩。
+
+5.增加層數
+  設定為一層100個神經元，epochs為 10,增加層數來測試強度。
+  
+
+
