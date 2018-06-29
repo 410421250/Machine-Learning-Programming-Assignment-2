@@ -29,9 +29,9 @@ Handwritten Character Recognition
 5.增加層數
   設定為一層100個神經元，epochs為 10,增加層數來測試強度。
   
-  ![image](https://github.com/410421250/Machine-Learning-Programming-Assignment-2/blob/master/layers.jpg)
+  ![image](https://github.com/410421250/Machine-Learning-Programming-Assignment-2/blob/master/layer.jpg)
   
-  根據這個實驗，可以看出層數對
+  根據這個實驗，可以看出層數對正確率的影響還是有的，雖然並不明顯，但是我計算每個神經元的總數，發現一層的神經元總數是(784*100+100)+(100*10 10) = 79510及兩層的神經元總數是(784*100+100)+(100*100+100)+(100*10+10) = 89610發現他們都神經元總數只相差12%而已，所以結論是層數要和神經元數目一起看，可以用來判斷增加的強度。
   
 
 
