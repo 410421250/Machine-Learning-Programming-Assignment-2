@@ -22,6 +22,6 @@ print(x_train.shape[0], x_test.shape[0])
 #印出資料大小 
 
 # convert class vectors to binary class matrices
-y_train = keras.utils.to_categorical(y_train, num_classes)
-y_test = keras.utils.to_categorical(y_test, num_classes)
+y_train = keras.utils.to_categorical(y_train, 10)
+y_test = keras.utils.to_categorical(y_test, 10)
 #ont-hot coding 轉換
