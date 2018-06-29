@@ -8,4 +8,5 @@ Handwritten Character Recognition
 2.優化器的比較
   這次取了五種不同的優化來做比較，分別是RMSprop, SGD, Adagrad, Adam ,Adamax這五種，使用的都是同一個model，都是Full connected兩層，神經元數都是10個
   ，使用的設備是GTX 1060，batch_size等於100，epochs等於5。
+  ![image](https://github.com/410421250/Machine-Learning-Programming-Assignment-2/blob/master/optimizer.jpg)
 3.
