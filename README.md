@@ -16,4 +16,8 @@ Handwritten Character Recognition
   我們挑選Adam當作我們的優化器。
   ![image](https://github.com/410421250/Machine-Learning-Programming-Assignment-2/blob/master/epochs.jpg)
   
-  藉由這張圖可以觀察到，在15 epochs的訓練中，正確率卻沒有明顯的增長，甚至還更低，這有兩個可能性，第一個是因為model產生了overfitting的情況，但是這個問題不太可能，因為這個model的強度設定的很低，所以產生overfitting可能性不大，那麼就是第二種可能，就是因為model的強度實在是太低，到達了這個model的極限了。
+  藉由這張圖可以觀察到，在15 epochs的訓練中，正確率卻沒有明顯的增長，甚至還更低，這有兩個可能性，第一個是因為model產生了overfitting的情況，但是這個問題不太可能，因為這個model的強度設定的很低，所以產生overfitting可能性不大，那麼就是第二種可能，就是因為model的強度實在是太低，到達了這個model的極限了，所以在下一個測試會增加每層神經元的數目來實驗。
+  
+  
+4.增加神經元數目
+原本是10個神經元一層，現在用100為倍數來增加並且比較，設定為10 epochs。
