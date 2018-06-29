@@ -29,5 +29,9 @@ Handwritten Character Recognition
 5.增加層數
   設定為一層100個神經元，epochs為 10,增加層數來測試強度。
   
+  ![image](https://github.com/410421250/Machine-Learning-Programming-Assignment-2/blob/master/layers.jpg)
+  
+  根據這個實驗，可以看出層數對
+  
 
 
