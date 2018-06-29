@@ -24,4 +24,4 @@ print(x_train.shape[0], x_test.shape[0])
 # convert class vectors to binary class matrices
 y_train = keras.utils.to_categorical(y_train, num_classes)
 y_test = keras.utils.to_categorical(y_test, num_classes)
-#ont-hot coding
+#ont-hot coding 轉換
