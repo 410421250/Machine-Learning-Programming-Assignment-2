@@ -21,3 +21,7 @@ Handwritten Character Recognition
   
 4.增加神經元數目
 原本是10個神經元一層，現在用100為倍數來增加並且比較，設定為10 epochs。
+
+![image](https://github.com/410421250/Machine-Learning-Programming-Assignment-2/blob/master/neurons.jpg)
+
+這個實驗中可以觀察到，增加神經元的數目確實是可以增加辨識的強度，但是在到達一個極限後，正確率上升的數目就會趨緩。
