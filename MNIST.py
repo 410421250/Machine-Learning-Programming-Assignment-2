@@ -8,6 +8,7 @@ from keras.optimizers import RMSprop
 
 
 
+
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
 x_train = x_train.reshape(60000, 784)
@@ -30,12 +31,30 @@ y_test = keras.utils.to_categorical(y_test, 10)
 #ont-hot coding 轉換
 
 model = Sequential()
-model.add(Dense(100, activation='relu', input_shape=(784,)))
-model.add(Dense(100, activation='relu'))
+model.add(Dense(10, activation='relu', input_shape=(784,)))
+#model.add(Dense(10, activation='relu'))
 model.add(Dense(10, activation='softmax'))
 
 
 #model設計
+
+model.summary()
+
+#印出總結
+
+model.compile(loss='categorical_crossentropy',
+              optimizer=RMSprop(),
+              metrics=['accuracy'])
+
+history = model.fit(x_train, y_train,
+                    batch_size=100,
+                    epochs=10,
+                    verbose=1,
+                    validation_data=(x_test, y_test))
+score = model.evaluate(x_test, y_test, verbose=0)
+print('test loss:', score[0])
+print('test accuracy:', score[1])
+
 
 
 
